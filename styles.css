@@ -66,4 +66,5 @@ span{
 .contact:hover {
     background-color: orangered;
     box-shadow: 0 0 25px orangered;
+    color: white;
 }
