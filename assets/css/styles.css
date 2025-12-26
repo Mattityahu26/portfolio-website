@@ -93,9 +93,20 @@ span{
     margin: 25px 0 30px;    
 }
 
-.text-stack {
-    position: relative;
-    animation-name: ;
+.tech-stack {
+    display: inline-block;
+}
+.tech-stack span {
+    display: inline-block;
+    animation: floatUpDown 10s ease-in-out infinite;
+}
+.tech-stack span.space {
+    animation: none;
+}
+@keyframes floatUpDown {
+    0%, 
+    100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
 .btn-box {
