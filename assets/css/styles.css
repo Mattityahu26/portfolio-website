@@ -93,7 +93,7 @@ span{
     margin: 25px 0 30px;    
 }
 
-.tech-stack {
+/* .tech-stack {
     display: inline-block;
 }
 .tech-stack span {
@@ -107,7 +107,7 @@ span{
     0%, 
     100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
-}
+} */
 
 .btn-box {
     width: 345px;
