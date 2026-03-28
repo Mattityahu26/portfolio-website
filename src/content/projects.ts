@@ -18,7 +18,7 @@ export const projects: Project[] = [
     {
         title: "IPEX-LLM",
         description: "Performance layer on top of PyTorch that utilizes Intel's optimized mathematical operations instead of native PyTorch operations to allow better performance on Intel Hardware.",
-        tech: ["PyTorch", "Python"],
+        tech: ["PyTorch", "Python", "C++", "Shell", "Dockerfile", "Lua"],
         github: "https://github.com/intel/ipex-llm",
         featured: true
     },    

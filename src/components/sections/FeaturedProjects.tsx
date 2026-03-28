@@ -6,31 +6,30 @@ export default function FeaturedProjects() {
 
     return (
         <section id="projects" className="py-16">
-            <div className="mx-auto max-w-5x1 px-6">
+            <div className="mx-auto max-w-5xl px-6">
                 <div className="mb-8">
-                    <h2 className="text-2x1 font-semibold md:text-3x1">Featured Projects</h2>
-                    
-                    <p className="mt-2 text-neutral-600">A few projects that reflect my current interest and technical focus</p>
+                    <h2 className="text-center text-2xl font-semibold md:text-3xl">Featured Projects</h2>
+
                 </div>
 
                 <div className="grid gap-6 md:grid-cols-2">
                     {featuredProjects.map((project) => (
-                        <article key={project.title} className="rounded-2x1 border border-neutral-200 p-6">
-                            <h3 className="text-xl font-semibold">{project.title}</h3>"
-                            <p className="mt-3 text-neutral-600">{project.description}</p>
+                        <article key={project.title} className="rounded-2xl border border-neutral-700 bg-neutral-900 p-6 shadow-sm">
+                            <h3 className="text-center text-xl font-semibold">{project.title}</h3>
+                            <p className="mt-3 text-neutral-300">{project.description}</p>
 
                             <ul className="mt-4 flex flex-wrap gap-2">
                                 {project.tech.map((item) => (
-                                    <li key={item} className="rounded-full bg-neutral-100 px-3 py-1 text-sm">
+                                    <li key={item} className="rounded-full bg-neutral-700 px-3 py-1 text-sm">
                                         {item}
                                     </li>
                                 ))}
                             </ul>
 
-                            <div className="mt-5 flex gap-4">
-                                {project.github && (<Link href={project.github} className="underline">Github</Link>)}
+                            <div className="mt-5 flex gap-4 sm:justify-center text-center">
+                                {project.github && (<a href={project.github} target="_blank" rel="noopener noreferrer" className="inline-block text-neutral-200 transition duration-200 hover:-translate-y-0.5 hover:text-white">Github</a>)}
 
-                                {project.live && (<Link href={project.live} className="underline">Live Site</Link>)}
+                                {project.live && (<a href={project.live} target="_blank" rel="noopener noreferrer" className="inline-block text-neutral-200 transition duration-200 hover:-translate-y-0.5 hover:text-white">Live Site</a>)}
                             </div>
                         </article>
                     ))}
